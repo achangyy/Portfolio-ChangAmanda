@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="loader">
+    <div class="mc-loader-box">
+        <h2>Generating World</h2>
+        <p>Loading terrain...</p>
+
+        <div class="mc-bar">
+            <div class="mc-progress" id="progress"></div>
+        </div>
+
+        <p id="percent">0%</p>
+    </div>
+    </div>
+<div id="page-content">
+    
+    <!--HEADER-->
+    <header class="hero-home">
+        <div class="hero-text">
+        <h1>AMANDA CHANG</h1>
+        <p>Mechanical Engineering Student</p>
+        </div>
+    </header>
+
+    <!--PROJECTS-->
+    <section id = "projects">
+       <!-- <h2>My Projects</h2>-->
+        <div class = "projects-grid">
+
+           <a href = "robotics.html" class="project-card">
+                <img src = "images/Robotics_Profile.webp" alt = "Project 1">
+                <div class = "overlay">
+                    <h3>Robotics</h3>
+                    <p>Fusion360. Troubleshoot. C++.</p>
+                </div>
+            </a>
+
+            <a href = "linac.html" class="project-card">
+                <img src = "images/Linac_Profile.jpg" alt = "Project 2">
+                <div class = "overlay">
+                    <h3>Linac Coherent Light Source</h3>
+                    <p>Solid Edge. 3D Printing. Iterate.</p>
+                </div>
+            </a>
+
+            <a href = "eVTOL.html" class="project-card">
+                <img src = "images/eVTOL_Profile.jpg" alt = "Project 3">
+                <div class = "overlay">
+                    <h3>Maelstorm eVTOL</h3>
+                    <p>Manufacturing. Composite. Hand Tools.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
