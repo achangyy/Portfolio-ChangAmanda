@@ -239,7 +239,12 @@ section {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
-    flex-wrap: nowrap;
+}
+
+.project-row-flex{
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
 }
 
 @media (max-width: 768px) {
