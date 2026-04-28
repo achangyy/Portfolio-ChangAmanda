@@ -1,3 +1,5 @@
+/* TITLE */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -443,4 +445,9 @@ body.loaded {
 #page-content.loaded {
     display: block;
     opacity: 1;
+}
+
+.small-img{
+    max-width:200px;
+    height:auto;
 }
