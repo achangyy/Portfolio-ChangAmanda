@@ -166,6 +166,7 @@ section {
     flex: 2;
     font-size:1rem;
     line-height:1.6;
+    min-width: 0;
 }
 
 @media (max-width: 768px) {
@@ -238,6 +239,7 @@ section {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
+    flex-wrap: nowrap;
 }
 
 @media (max-width: 768px) {
