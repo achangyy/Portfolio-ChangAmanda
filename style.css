@@ -1,4 +1,25 @@
+/* WEBSITE STYLE */
+/* NOTE: I AM STILL WORKING ON CLEANING UP AND COMMENTING SECTIONS. THIS IS A WORK IN PROGRESS */
 /* TITLE */
+
+.hero-home h1 {
+    font-family: "Press Start 2P", monospace;
+    font-size: 2rem;
+}
+
+.hero-home p{
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.9rem;
+}
+
+.hero-home p2{
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.65rem;
+}
+
+.home-page {
+    background-color: #dcefd8;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -62,7 +83,7 @@ section {
     transition:filter 0.3s ease, transform 0.3s ease;
 }
 
-/* OVERLAY */
+/* OVERLAY OVER PROJECT CARD */
 .overlay{
     position: absolute;
     top:0;
@@ -79,37 +100,25 @@ section {
     color:white;
 
     opacity: 0;
-    transition: opacity 0.3s ease;
-
-    
-}
-
+    transition: opacity 0.3s ease;}
 .overlay-text{
     text-align:center;
-    padding: 10px;
-}
-
+    padding: 10px;}
 .overlay-text h3 {
     margin:0;
-    font: size 1.2rem;
-}
-
+    font-size: 1.2rem;}
 .overlay-text p {
     margin: 5px auto 0;
     font-size:0.9rem;
     opacity: 0.85;
-    max-width: 80%;
-}
+    max-width: 80%;}
 
 /* OVERLAY ON HOVER */
 .project-card:hover .overlay {
-    opacity: 1;
-}
-
+    opacity: 1;}
 @media (max-width:600px){
 .projects-grid {
-    grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;}
 }
 
 .site-header {
@@ -153,19 +162,45 @@ section {
 .project-images {
     flex: 0 0 320px;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
 }
 
 .project-images img {
     width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 10px;
-    object-fit: cover;
+    height: 200px;
+    /* aspect-ratio: 1/1;
+    border-radius: 10px; */
+    object-fit: contain;
+    display: block;
+}
+
+.project-image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+}
+
+.project-image-item img{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    display: block;
+}
+
+.image-caption {
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+    margin: 8px 0 0;
+    line-height:1.5;
 }
 
 .project-text {
-    flex: 2;
+    flex: 1;
     font-size:1rem;
     line-height:1.6;
     min-width: 0;
@@ -191,6 +226,17 @@ section {
     font-weight: bold;
     margin: 10px 0 5px;
 }
+
+.project-gallery {
+    flex: 0 0 45%;
+    max-width: 45%;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 25px 15px;
+    align-content: start;
+}
+
 
 .hero {
     height: 40vh;
@@ -236,8 +282,8 @@ section {
 
 .project-row {
     display: flex;
-    gap: 20px;
-    align-items: stretch;
+    gap: 30px;
+    align-items: flex-start;
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
@@ -246,6 +292,13 @@ section {
 @media (max-width: 768px) {
     .project-row {
         flex-direction: column;
+    }
+
+    .project-gallery {
+        flex:none;
+        max-width:100%;
+        width: 100%;
+        grid-template-columns: repeat(2,minmax(0,1fr));
     }
 }
 
@@ -259,14 +312,13 @@ section {
 }
 
 .project-grid {
-    flex: 0 0 320px;
-    max-width: 320px;
+    flex: 0 0 45%;
+    max-width: 45%;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-
-    height:100%
+    height:100%;
+    align-content: start;
 }
 
 .grid-item {
@@ -307,9 +359,9 @@ section {
 .hero-home {
     height: 30vh;
 
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/117/696/29/minecraft-outdoors-shaders-sun-rays-video-games-hd-wallpaper-preview.jpg"); 
+    background-image: url("https://64.media.tumblr.com/1b52998cd4acc05aae65bfb15aac2293/531b611a0db66eb0-c6/s640x960/b39594668724b1566cc2cfacaef61cf6b86af70b.gifv"); 
     background-size: cover;
-    background-position: 50% 29%;
+    background-position: 50% 65%;
 
     display: flex;
     align-items: center;
