@@ -9,74 +9,84 @@
 
 <body>
 
-    <!-- TITLE -->
+    <!-- TOP PORTION -->
      <div class = "hero hero-robotics">
             <div class = "hero-text">
-                <h1 class = "project-title">VEXU Robotics</h1>
+                <h1 class = "project-title">VEX U Robotics</h1>
                 <p class = "objective-title">Objective:</p>
-                <p> Design and build the robot. Code the driver control and autonomous routines.</p>
-                
+                <p> 
+                    Design and build the robot within 18" x 18" x 18" dimensions. 
+                    Code the driver control and autonomous routines including inertial, rotation, and vision sensor.
+                </p>
+            
             </div>
         </div>
 
-    <!-- CONTENT -->
+    <!-- GAME CONTEXT -->
     <section class = "project-row">
         <h3>Push Back Game Context</h3>
         <p>Game is based on controlling goals and mangaging blocks in a 12'x12' area. There are high, middle, and low goals where you can score and maintain control to score. There is a 15 second autonomous period then a 1 minute and 45 second driver-controlled period.</p>
 
     </section>
 
+    <!-- WHAT I DID -->
      <section class ="project-row">
-        <!--LEFT: TEXT-->
+        <!--LEFT SIDE: TEXT-->
         <div class ="project-text">
-            <h3>What I did </h3>
+            <h3>What I Did </h3>
             <p>- Design the first intake iteration from a slope to an S-shape to increase carrying capacity to score quickly</p>
             <p>- Helped assemble drive train</p>
             <p>- Built upon previous code due to more complex autonomous routines, addition of sensors+pneumatics, and adding more driver control features</p>
             <p>- Discussed with mechanics on what should be fixed and gave them the brain port assignments</p>
-        </div>
-
-        <div class = "img-box">
-            <img src="images/rob1.png" alt="robbie">
-        </div>
-        <div class = "img-box">
-            <img src="images/rob2.png" alt="robluz">
-        </div>
-    </section>
-
-
-    <section class ="project-row">
-        <div class ="project-text">
             <h3>Tools Used</h3>
-            <p>Fusion360, Visual Studio Code (C++), drill, wrench, screwdriver</p>
+            <p>Fusion360, Visual Studio Code (C++), power tools, drill, wrench, screwdriver</p>
         </div>
 
-        <div class = "img-box">
-            <img src="images/rob6.webp" class="img-right">
-        </div>
-        <div class = "img-box">
-            <img src="images/rob4.png" class="img-right">
+        <!-- RIGHT SIDE: IMAGES -->
+        <div class = "project-gallery">
+
+            <div class = "project-image-item">
+                <img src = "images/rob1.png" alt="Building the drivetrain">
+                <p class = "image-caption"> 
+                    Building the drivetrain
+                </p>
+            </div>
+
+            <div class = "project-image-item">
+                <img src = "images/rob2.png" alt="Initial inclined intake design">
+                <p class = "image-caption"> 
+                    Initial inclined intake design 
+                </p>
+            </div>
+
+             <div class="project-image-item">
+                <img src="images/rob6.webp" alt="Final robot build Cody">
+                <p class="image-caption"> 
+                    Final robot built named Cody
+                </p>
+            </div>
+
+            <div class="project-image-item">
+                <img src="images/rob4.png" alt="S-shaped intake iteration">
+                <p class="image-caption">
+                    First iteration of the S-design
+                </p>
+            </div>
+
+            <div class="project-image-item">
+                <img src="images/rob8.png" alt="Optical sensor color sorting">
+                <p class="image-caption">
+                    Color sorting using the optical sensor
+                </p>
+            </div>
+
+            <div class="project-image-item">
+                <img src="images/rob7.png" alt="Intake control header file">
+                <p class="image-caption">
+                    Intake control header file designed around driver preference
+                </p>
+            </div>
         </div>
     </section>
-
-    <section class = "project-row">
-        <div class ="project-text">
-            <h3> Picture Captions</h3>
-            <p>Top Left: Building drive train</p>
-            <p>Top Right: Initial design with an inclined slope for the intake</p>
-            <p>Center Left: Picture of our final bot build named Cody</p>
-            <p>Center Right: First iteration of the S-design </p>
-            <p>Bottom Left: Color sorting using an optical sensor where I am pretending that we are on the red team and want to score. There was going to be a roller which determines whether or not the ball will continue to be intaked/score or outtake (IntakeMotorBottom) </p>
-            <p>Bottom Right: Portion of the intake control header file based on which button the driver presses. Determining which button should belong to each command and if there should be toggle is based on driver preference. The rest of the function that isn't part of the picture is to control the pneumatics. </p>
-        </div>
-
-        <div class="imag-box small-img">
-            <img src="images/rob8.png" alt="Tools Used">
-        </div>
-        <div class = "img-box small-img">
-            <img src="images/rob7.png" alt="Tools Used">
-        </div>
-    </section>
-
 </body>
 </html>
