@@ -17,7 +17,16 @@
     font-size: 0.65rem;
 }
 
+
+.hero-home {
+    background-image: url("images/home.gif");
+}
+
 .home-page {
+    background-color: #dcefd8;
+}
+
+#projects {
     background-color: #dcefd8;
 }
 
